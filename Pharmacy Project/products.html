@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="leftMenu">
+          <div class="logo">
+            <img src="./img/logo.58169365.png" alt="" />
+            <p class="logoname">Kafene</p>
+          </div>
+          <nav>
+            <a href="./order.html" class="menuitem">Orders</a>
+              <a href="./products.html" class="menuitem">Products</a>
+              <a href="./users.html" class="menuitem">Users</a>
+          </nav>
+        </div>
+        <a href="" class="menuitemLog">Logout</a>
+      </div>
+    </header>
+
+
+<main>
+    <main class="mainContainer">
+        <div class="order">
+          <h1 class="orderHeading">Products</h1>
+          <div class="orderWrapper">
+            <div class="filterWrapper">
+              <h3>Filters</h3>
+              <div class="homefilterOption">
+                <p>Count:  <span id="productCount"></span> </p>
+                <label class="labelCheck">
+                  <input type="checkbox" name="expired" value="expired" checked />Expired
+                </label>
+                <label class="labelCheck">
+                  <input type="checkbox" name="lowStock" value="lowStock" checked />Low Stock
+                </label>
+             
+              </div>
+            </div>
+            <div style="width: 100%">
+              <table id="homeOrderTable">
+                <tr>
+                  <th>ID</th>
+                  <th>Product Name</th>
+                  <th>Product Braand</th>
+                  <th>Expiry Date</th>
+                  <th>Unit Price</th>
+                  <th>Stock</th>
+                </tr>
+                <tbody id="productTable">
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+</main>
+    <script src="./product.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="leftMenu">
+          <div class="logo">
+            <img src="./img/logo.58169365.png" alt="" />
+            <p class="logoname">Kafene</p>
+          </div>
+          <nav>
+            <a href="./order.html" class="menuitem">Orders</a>
+            <a href="./products.html" class="menuitem">Products</a>
+            <a href="./users.html" class="menuitem">Users</a>
+          </nav>
+        </div>
+        <a href="" class="menuitemLog">Logout</a>
+      </div>
+    </header>
+
+    <main class="mainContainer">
+      <div class="order">
+        <h1 class="orderHeading">Orders</h1>
+        <div class="orderWrapper">
+          <div class="filterWrapper">
+            <h3>Filters</h3>
+            <div class="homefilterOption">
+              <p>Count: <span id="orderCount"></span></p>
+              <label class="labelCheck">
+                <input type="checkbox"
+                 name="new" 
+                 value="new"
+                 class="checkboxx" 
+                 id="new"  
+                 checked />New
+              </label>
+
+              <label class="labelCheck">
+                <input type="checkbox"
+                 name="packed"
+                 class="checkboxx" 
+                 value="packed"
+                 checked />Packed
+              </label>
+              
+              <label class="labelCheck">
+                <input
+                  type="checkbox"
+                  name="intransit"
+                  class="checkboxx"
+                  value="intransit"
+                  checked
+                />InTransit
+              </label>
+              <label class="labelCheck">
+                <input
+                  type="checkbox"
+                  name="delivered"
+                  class="checkboxx"
+                  value="delivered"
+                  checked
+                />Delivered
+              </label>
+            </div>
+          </div>
+          <div style="width: 100%">
+            <table id="homeOrderTable">
+              <tr>
+                <th>ID</th>
+                <th>Customer</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Status</th>
+              </tr>
+              <tbody id="orderdatatable">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./order.js"></script>
+  </body>
+</html>

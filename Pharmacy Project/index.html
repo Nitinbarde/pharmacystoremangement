@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <div class="navbar">
+          <div class="leftMenu">
+            <div class="logo">
+              <img src="./img/logo.58169365.png" alt="" />
+              <p class="logoname">Kafene</p>
+            </div>
+            <nav>
+              <a href="./order.html" class="menuitem">Orders</a>
+              <a href="./products.html" class="menuitem">Products</a>
+              <a href="./users.html" class="menuitem">Users</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="maincontainer">
+        <div>
+          <form action="" class="formLogin">
+            <h1>Sign In</h1>
+            <input
+              type="text"
+              class="loginInput"
+              name="username"
+              id="txtUserName"
+              placeholder="Enter Username"
+            />
+            <input
+              type="password"
+              class="loginInput"
+              name="password"
+              id="txtPassword"
+              placeholder="Enter password"
+            />
+            <input
+              type="button"
+              id="btnLogin"
+              class="loginButton"
+              value="Login"
+            />
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
